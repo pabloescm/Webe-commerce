@@ -142,7 +142,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-CSRF_TRUSTED_ORIGINS = ['http://localhost','https://web-production-59910.up.railway.app','localhost:5173']
+CSRF_TRUSTED_ORIGINS = ['http://localhost','https://web-production-59910.up.railway.app']
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",  # Permite solicitudes desde Vite
