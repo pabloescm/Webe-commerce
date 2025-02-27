@@ -28,14 +28,14 @@ class AddressSerializer(serializers.ModelSerializer):
 
 class UserRegistrationSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True)
-    addresses = AddressSerializer(many=True)
+    addresses = AddressSerializer(many=True, required=False)
 
     class Meta:
         model = User
         fields = ['username', 'password', 'email', 'first_name', 'last_name', 'addresses']
 
     def create(self, validated_data):
-        addresses_data = validated_data.pop('addresses')
+        addresses_data = validated_data.pop('addresses', [])
         user = User.objects.create_user(
             username=validated_data['username'],
             password=validated_data['password'],
