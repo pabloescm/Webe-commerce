@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-hb4$pf-%hxpjt=m53-dhpyf$as)cm89p8)g=i@3^0ow*99s%*q
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1','web-production-59910.up.railway.app']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1','web-production-59910.up.railway.app','https://decoracionescommercecliente-production.up.railway.app',]
 
 
 # Application definition
@@ -142,7 +142,9 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-CSRF_TRUSTED_ORIGINS = ['http://localhost','https://web-production-59910.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['http://localhost',
+                        'https://web-production-59910.up.railway.app',
+                        'https://decoracionescommercecliente-production.up.railway.app',]
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",  # Permite solicitudes desde Vite
