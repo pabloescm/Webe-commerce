@@ -147,6 +147,7 @@ CSRF_TRUSTED_ORIGINS = ['http://localhost','https://web-production-59910.up.rail
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",  # Permite solicitudes desde Vite
     "http://web-production-59910.up.railway.app",
+    "https://decoracionescommercecliente-production.up.railway.app",
    
 ]
 #CORS_ALLOW_CREDENTIALS = True  # Si usas autenticación con cookies o tokens
