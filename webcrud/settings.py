@@ -152,7 +152,7 @@ CORS_ALLOWED_ORIGINS = [
     "https://decoracionescommercecliente-production.up.railway.app",
    
 ]
-#CORS_ALLOW_CREDENTIALS = True  # Si usas autenticación con cookies o tokens
+CORS_ALLOW_CREDENTIALS = True  # Si usas autenticación con cookies o tokens
 
 CORS_ALLOW_ALL_ORIGINS = True
 
